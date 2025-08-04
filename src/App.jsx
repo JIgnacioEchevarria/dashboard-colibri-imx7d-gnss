@@ -9,7 +9,6 @@ function App() {
   return (
     <div className='main-container'>
       <Header />
-      <h2>hola</h2>
       <div className='metrics-container'>
         <DataCard
           label='Latitud'
