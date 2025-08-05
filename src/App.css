@@ -38,4 +38,5 @@
 .gnss-data-card__value {
     font-weight: bold;
     font-size: 3rem;
+    color: rgb(29, 151, 207);
 }

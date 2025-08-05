@@ -1,6 +1,4 @@
-import { Box } from "@mui/material"
-
-export const DataCard = ({ label, value, icon }) => {
+export const DataCard = ({ label, value }) => {
     return (
         <div>
             <div className='gnss-data-card'>
@@ -12,11 +10,6 @@ export const DataCard = ({ label, value, icon }) => {
                         gap: '1rem'
                     }}
                 >
-                    {icon &&
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            {icon}
-                        </Box>
-                    }
                     <div className="gnss-data-card__value">{value}</div>
                 </div>
             </div>

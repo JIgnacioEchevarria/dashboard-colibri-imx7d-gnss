@@ -13,9 +13,9 @@ export const useGnssData = () => {
                     setError(error)
                 }
 
-                const data = await res.json()
-
-                setData(data)
+                const jsonData = await res.json()
+                console.log(jsonData)
+                setData(jsonData)
             } catch (error) {
                 setError(error)
             }
