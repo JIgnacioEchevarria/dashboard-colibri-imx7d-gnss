@@ -4,12 +4,16 @@ import { DataCard } from './components/DataCard.jsx'
 import { TemperatureGauge } from './components/TemperatureGauge.jsx'
 import ExploreIcon from '@mui/icons-material/Explore'
 import PublicIcon from '@mui/icons-material/Public'
+import { useGnssData } from './hooks/useGnssData.js'
 
 function App() {
+  const { data } = useGnssData()
+
+  console.log(data)
+
   return (
     <div className='main-container'>
       <Header />
-      <h2>Hola</h2>
       <div className='metrics-container'>
         <DataCard
           label='Latitud'
